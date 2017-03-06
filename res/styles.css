@@ -3,14 +3,53 @@
 body {
   margin: 0;
 
-  background-color: #64917E;
-  /*background-image: url('img/bg.jpg');*/
-  background-size: cover;
-  background-position: center center;
-
   color: #ffffff;
   font-family: 'Alegreya', sans-serif;
   font-weight: 400;
   font-size: 24px;
 }
 
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+}
+
+.scrollcontainer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.section {
+  min-height: 100vh;
+  background: #C8DED5;
+  overflow: hidden;
+}
+
+.header-bg {
+  background: none;
+  /*background-image: url('img/bg.jpg');
+  background-size: cover;
+  background-position: center center;*/
+}
+
+.section.abscenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.feat-email {
+  flex: 1;
+  color: rgba(0, 0, 0, 0.56);
+  text-align: center;
+}
