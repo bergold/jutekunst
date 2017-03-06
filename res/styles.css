@@ -1,0 +1,16 @@
+@import url('hero.css');
+
+body {
+  margin: 0;
+
+  background-color: #64917E;
+  /*background-image: url('img/bg.jpg');*/
+  background-size: cover;
+  background-position: center center;
+
+  color: #ffffff;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
