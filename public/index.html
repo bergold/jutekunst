@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <title>jutekunst</title>
-    
+
     <link rel="shortcut icon" href="res/img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,700">
     <link rel="stylesheet" href="res/styles.css">
@@ -12,9 +12,9 @@
   </head>
   <body>
 
-    <div class="container" id="Scroller">
-      
-      <div class="header">
+    <div class="container" id="Scroller" data-js-init="ScrollerComponent">
+
+      <div class="header" data-js-init="ShrinkHeaderComponent">
         <div class="collapsed"></div>
         <div class="expanded title">
           <div>
@@ -35,21 +35,21 @@
         </div>
 
         <div class="section abscenter">
-          
+
           <div class="feat-email">
             hello@jutekunst.com
           </div>
-          
+
           <div class="">
             <div class="menu"></div>
           </div>
         </div>
       </div>
-      
+
     </div>
-    
-    <!--script src="app/app.js"></script-->
-    
+
+    <script src="main.bundle.js"></script>
+
     <!-- ######################################################################### -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
