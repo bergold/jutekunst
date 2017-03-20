@@ -7,7 +7,8 @@
     "build:min": "cross-env APP_ENV=production webpack -p --progress --colors",
     "clean": "del-cli build/**",
     "dist": "npm run clean && npm run build && npm run build:min",
-    "dev": "npm run clean && cross-env APP_ENV=development webpack-dev-server --content-base public --inline --host 0.0.0.0"
+    "dev": "npm run clean && cross-env APP_ENV=development webpack-dev-server --content-base public --inline --host 0.0.0.0",
+    "appengine": "dev_appserver.py app.yaml --host 0.0.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",

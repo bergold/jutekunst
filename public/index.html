@@ -7,27 +7,30 @@
 
     <link rel="shortcut icon" href="res/img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round:400">
     <link rel="stylesheet" href="res/styles.css">
 
   </head>
   <body>
 
-    <div class="container" id="Scroller" data-js-init="ScrollerComponent">
+    <div class="container" data-js-disable-init="ScrollerComponent">
 
-      <div class="header" data-js-init="ShrinkHeaderComponent">
-        <div class="collapsed"></div>
-        <div class="expanded title">
+      <div class="popartheader header" data-js-init="PopartHeaderComponent">
+        <div class="popartheader__overlay">
           <div>
             <span>J</span>
             <span>U</span>
-          </div>
-          <div class="triangle"></div>
-          <div>
+            <span class="space"></span>
             <span>T</span>
             <span>E</span>
           </div>
           <div class="caption">KUNST</div>
         </div>
+
+        <div class="popartheader__state--active popartheader__state triangle"><div class="object"></div></div>
+        <div class="popartheader__state square"><div class="object"></div></div>
+        <div class="popartheader__state circle"><div class="object"></div></div>
+        <div class="popartheader__state diamond"><div class="object"></div></div>
       </div>
 
       <div class="scrollcontainer">

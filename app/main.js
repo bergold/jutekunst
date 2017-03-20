@@ -1,11 +1,11 @@
-import {ShrinkHeaderComponent} from './components/shrinkheader/shrinkheader.js';
+import {PopartHeaderComponent} from './components/popartheader/popartheader.js';
 import {ScrollerComponent} from './components/scroller/scroller.js';
 
 import * as domInit from './components/dominit/dominit.js';
 
 (function() {
 
-  domInit.register('ShrinkHeaderComponent', ShrinkHeaderComponent);
+  domInit.register('PopartHeaderComponent', PopartHeaderComponent);
   domInit.register('ScrollerComponent', ScrollerComponent);
 
   domInit.init();

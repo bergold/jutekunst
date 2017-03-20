@@ -1,0 +1,80 @@
+.popartheader {
+  position: relative;
+}
+
+.popartheader__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.popartheader__state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+}
+.popartheader__state.popartheader__state--active {
+  visibility: visible;
+}
+
+.popartheader__state .object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-64px, -64px);
+  display: block;
+  width: 128px;
+  height: 128px;
+}
+
+/* INDIVIDUAL STATES */
+.popartheader__state.triangle {
+  background-color: #F0F0F0;
+  background-color: rgba(255, 45, 85, 0.1);
+}
+.popartheader__state.triangle .object {
+  /*background-color: #FF2D55;*/
+  background-color: transparent;
+
+  width: 0;
+  height: 0;
+  border-left: 64px solid transparent;
+  border-right: 64px solid transparent;
+  border-bottom: 128px solid #FF2D55;
+}
+
+.popartheader__state.square {
+  background-color: #F0F0F0;
+  background-color: rgba(88, 86, 214, 0.1);
+}
+.popartheader__state.square .object {
+  background-color: #5856D6;
+}
+
+.popartheader__state.circle {
+  background-color: #F0F0F0;
+  background-color: rgba(90, 200, 250, 0.1);
+}
+.popartheader__state.circle .object {
+  background-color: #5AC8FA;
+
+  border-radius: 50%;
+}
+
+.popartheader__state.diamond {
+  background-color: #F0F0F0;
+  background-color: rgba(76, 217, 100, 0.1);
+}
+.popartheader__state.diamond .object {
+  background-color: #4CD964;
+
+  transform-origin: top;
+  transform: rotate(45);
+}
